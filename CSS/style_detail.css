@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    width: 100vw;
+    max-width: 100%;
+}
+
+
+/* ----------Header Start------------ */
+
+.header {
+    height: 100%;
+}
+
+.header-nav {
+    /* width: 100%; */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to left top, white, black);
+}
+
+.header-nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    max-width: 80px;
+    height: 100%;
+}
+
+.header-nav-item .header-nav-link {
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    color: white;
+    transition: all 0.3s ease 0.1s;
+    box-sizing: border-box;
+}
+
+.header-nav-item .a-line {
+    width: 0%;
+    height: 2px;
+    background: black;
+    transition: all 0.2s ease 0.1s;
+    z-index: -100;
+    /* display: none; */
+}
+
+.header-nav-item:hover>.a-line {
+    width: 100%;
+    z-index: 100;
+}
+
+.header-nav-item .menu-inter {
+    width: 70%;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 15%;
+    right: 15%;
+    z-index: -100;
+    opacity: 0;
+    transition: all 0.3s ease 0.1s;
+    /* border: 1px solid black; */
+}
+
+.header-nav-item:hover>.menu-inter {
+    opacity: 1;
+    z-index: 100;
+}
+
+.header-nav-item .form-inter {
+    width: 15%;
+    height: 100px;
+    background-color: white;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 60px;
+    left: 53%;
+    right: 15%;
+    z-index: -100;
+    opacity: 0;
+    transition: all 0.3s ease 0.2s;
+}
+
+.header-nav-item:active>.form-inter,
+.header-nav-item:hover>.form-inter {
+    opacity: 1;
+    z-index: 100;
+}
+
+.form-inter div {
+    padding-left: 20px;
+}
+
+.form-inter div:first-child {
+    padding-top: 5px;
+}
+
+.form-inter .btn-signin {
+    background-color: rgb(38, 190, 214);
+    text-align: center;
+    width: 90%;
+}
+
+.mb-3 {
+    padding: 0 10px;
+}
+
+.forget {
+    float: right;
+}
+
+#submit:hover {
+    color: rgb(0, 60, 136);
+    border: 1px solid rgb(0, 60, 136);
+    outline: rgb(0, 60, 136);
+}
+
+.social i {
+    padding: 0 30px;
+}
+
+.social a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    /* padding: 0 10px; */
+}
+
+.text-form {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Text in line HR */
+
+.line {
+    width: 100%;
+    /* height: ; */
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.text-in-line {
+    background-color: white;
+    padding: 0 5px;
+}
+
+
+/* ------Header End------ */
+
+
+/* --------Main Start------ */
+
+
+/* -------Map Start------ */
+
+.map {
+    margin: 10px 0;
+}
+
+
+/* -----Map End-------- */
+
+
+/* ------Experience Start--------- */
+
+.experience {
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+.experience-title {
+    color: rgb(10, 65, 113);
+}
+
+
+/* ------Experience End--------- */
+
+
+/* -----Hotel Suggestion Start */
+
+.hotel-suggestion-link {
+    color: black;
+}
+
+.hotel-suggestion-link:hover {
+    color: black;
+}
+
+.hotel-suggestion-image {
+    padding: 0;
+}
+
+.hotel-suggestion-image img {
+    width: 100%;
+}
+
+.review {
+    padding: 10px 0;
+}
+
+.review-score {
+    background-color: rgb(63, 226, 63);
+    color: white;
+    /* padding: 10px 0; */
+}
+
+.reivew-text {
+    color: rgb(63, 226, 63);
+}
+
+.star {
+    color: rgb(246, 246, 33);
+}
+
+
+/* -----Hotel Suggestion Start */
+
+
+/* -------Main End ------- */

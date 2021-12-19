@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăt phòng khách sạn trực tuyến</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style_index.css">
+    <!-- Link Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- Link flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Khách sạn</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Tours</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Vé máy bay</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Ăn uống</a>
+                <div class="a-line"></div>
+                <div class="menu-inter">
+                </div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">...</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">
+                    <button class="btn">Account</button>
+                </a>
+                <div class="a-line"></div>
+                <div class="form-inter">
+                    <div>
+                        <button class="btn btn-signin" data-bs-toggle="modal" data-bs-target="#Form-Sign-In">Sign In</button>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Haven't got account ? <a href="#" data-bs-toggle="modal" data-bs-target="#Form-Sign-Up">Sign up</a> now</p>
+                    </div>
+                </div>
+            </li>
+        </nav>
+    </header>
+
+
+    <div class="banner">
+        <div class="form-signup-place">
+            <form action="">
+                <input type="datetime-local" class="form-control" id="Date-start">
+                <input type="datetime-local" class="form-control" id="Date-end">
+            </form>
+        </div>
+    </div>
+
+    <main class="main-content ">
+        <div class="container">
+            <div class="main-content-safe">
+                <div class="main-content-heding">
+                    <h2>Du lịch an toàn</h2>
+                    <p>Nâng cao sức khỏe, cân bằng cuộc sống</p>
+                </div>
+                <div class="main-content-safe-place">
+                    <div class="main-content-safe-place-item">
+                        <a href="#" class="safe-place-img">
+                            <div class="text-information-interesting">
+                                <h3>Lãng Mạn</h3>
+                                <p>Đi khắp thế gian, yêu thương ngập tràn - <span style="text-decoration: underline;">15 khách sạn</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-content-safe-place-item">
+                        <a href="#" class="safe-place-img">
+                            <div class="text-information-interesting">
+                                <h3>Tận hưởng</h3>
+                                <p>“Bạn thân à! Nếu sau này chúng ta già…” - <span style="text-decoration: underline;">13 khách sạn</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-content-safe-place-item">
+                        <a href="#" class="safe-place-img">
+                            <div class="text-information-interesting">
+                                <h3>Linh hoạt</h3>
+                                <p>Hoàn hủy linh hoạt, đặt không nghĩ ngợi - <span style="text-decoration: underline;">17 khách sạn</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-content-safe-place-item">
+                        <a href="#" class="safe-place-img">
+                            <div class="text-information-interesting">
+                                <h3>Lãng Mạn</h3>
+                                <p>Lưu giữ khoảnh khắc, trải nghiệm hành trình</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-banner">
+                <div class="main-content-heading">
+                    <h2>Ưu đãi tốt nhất hôm nay</h2>
+                    <p>Nhanh tay đặt ngay. Để mai sẽ lỡ</p>
+                </div>
+                <div class="main-content-banner-item">
+                    <div id="demo" class="carousel slide intro" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-banner-intro" src="./Asset/Image/slides1.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-banner-intro" src="./Asset/Image/slides2.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-banner-intro" src="./Asset/Image/slides3.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-interesting-place-inVietNamese">
+                <div class="main-content-heading">
+                    <h2>Điểm đến yêu thích trong nước</h2>
+                    <p>Lên rừng xuống biển. Trọn vẹn Việt Nam</p>
+                </div>
+                <div class="interesting-layout-VN">
+                    <div class="interesting-item-VN">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Phú Quốc</h3>
+                                <p>366 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-VN">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Vũng Tàu</h3>
+                                <p>114 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-VN">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Đà Lạt</h3>
+                                <p>567 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-VN">
+                        <a href="http://127.0.0.1:5500/Wed_Demo/Homepage_QuyNhon.html" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Quy Nhơn</h3>
+                                <p>140 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-VN">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Nha Trang</h3>
+                                <p>504 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-VN">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Đà Nẵng</h3>
+                                <p>798 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-VN">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Phan Thiết</h3>
+                                <p>108 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-VN">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Phú Yên</h3>
+                                <p>16 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-content-interesting-place-foreign">
+                <div class="main-content-heading">
+                    <h2>Điểm đến yêu thích nước ngoài</h2>
+                    <p>Bao la thế giới. Bốn bể là nhà</p>
+                </div>
+                <div class="interesting-layout-foreign">
+                    <div class="interesting-item-foreign">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Portugal</h3>
+                                <p>3133 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-foreign">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Switzerland</h3>
+                                <p>732 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-foreign">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Spain</h3>
+                                <p>7183 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-foreign">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Italy</h3>
+                                <p>2906 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="interesting-item-foreign">
+                        <a href="#" class="interesting-img">
+                            <div class="text-information-interesting">
+                                <h3>Greece</h3>
+                                <p>7427 khách sạn</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h6>Về iVIVU.com</h6>
+                    <ul class="list">
+                        <li><a href="">Chúng tôi</a></li>
+                        <li><a href="">iVIVU Blog</a></li>
+                        <li><a href="">PMS - Miễn phí</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Thông Tin Cần Biết</h6>
+                    <ul class="list">
+                        <li><a href="">Điều kiện & Điều khoản</a></li>
+                        <li><a href="">Quy chế hoạt động</a></li>
+                        <li><a href="">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Đối tác</h6>
+                    <ul class="list">
+                        <li><a href="">Quy chế bảo hiểm Cathay</a></li>
+                        <li><a href="">Yêu cầu bồi thường Cathay</a></li>
+                        <li><a href="">Quy chế trả góp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Được chứng nhận</h6>
+                    <a href="#"><img src="./Asset/Image/logoCCDV.png" alt="" width="80%"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img class="logo-footer" src="./Asset/Image/tmg_logo.png" alt=""></a>
+                    <a href="#"><img class="logo-footer" src="./Asset/Image/vic_logo.png" alt=""></a>
+                    <p>Một thành viên của <b>Thiên Minh Group</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div>
+                        <span style="cursor:pointer;" class="row">
+                            <span style="padding-right: 5px;">
+                                <img src="./Asset/Image/wta-winner-shield-2021.png" width="43" >
+                            </span>
+                        <a href="#" style="color:#333333; ">
+                                iVIVU.com © 2021 - Đại lý Du lịch Trực tuyến Hàng đầu Việt Nam
+                                2021
+                            </a>
+                        </span>
+                        <span style="cursor:pointer;" class="row">
+                            <span style="padding-right: 5px;">
+                                <img src="./Asset/Image/hraa-logo.png" width="43" >
+                            </span>
+                        <a href="#" style="color:#333333; ">
+                            Best Company to Work for in Asian 2021
+                            </a>
+                        </span>
+                    </div>
+                    <div class="address">
+                        <p>DKKD: 0312788481, Ngày cấp: 21/05/2014, Sở kế hoạch đầu tư thành phố Hồ Chí Minh</p>
+                        <p><i class="bi bi-geo-alt-fill"></i><b>HCM:</b> Lầu 2, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, Tp. Hồ Chí Minh <a href="https://www.google.com/maps/dir/215+Nam+K%E1%BB%B3+Kh%E1%BB%9Fi+Ngh%C4%A9a/215+Nam+K%E1%BB%B3+Kh%E1%BB%9Fi+Ngh%C4%A9a,+ph%C6%B0%E1%BB%9Dng+7,+Qu%E1%BA%ADn+3,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.7879873,106.6832823,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x31752f2d1ca383bf:0x6a80cef8498de40!2m2!1d106.685471!2d10.787982!1m5!1m1!1s0x31752f2d1ca383bf:0x6a80cef8498de40!2m2!1d106.685471!2d10.787982">(Xem bản đồ)</a></p>
+                        <p><i class="bi bi-geo-alt-fill"></i><b>HN:</b> Tầng 1, Tòa nhà Ladeco, 266 Đội Cấn, Phường Liễu Giai, Quận Ba Đình, Hà Nội <a href="https://www.google.com/maps/place/To%C3%A0+nh%C3%A0+LADECO/21.0362471,105.8159045,15z/data=!4m5!3m4!1s0x0:0xde7c4fb8e272fabc!8m2!3d21.0363111!4d105.8159219">(Xem bản đồ)</a></p>
+                        <p><i class="bi bi-geo-alt-fill"></i><b>Cần Thơ:</b> Tầng 7 - Tòa nhà STS - 11B Đại Lộ Hòa Bình, P. Tân An, Q. Ninh Kiều, TP. Cần Thơ <a href="https://www.google.com/maps/place/T%C3%B2a+Nh%C3%A0+Sts+Tower/10.0327448,105.7813923,17z/data=!3m1!4b1!4m5!3m4!1s0x31a062a021d30f53:0x4e9df205bfecd40c!8m2!3d10.0327448!4d105.783581">(Xem bản đồ)</a></p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h5>Bạn cần trợ giúp? Hãy gọi ngay</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Modal Sign In -->
+    <div class="modal fade" id="Form-Sign-In" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row text-form">
+                        <p>Sign In by:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn btn-primary">
+                                <i class="bi bi-facebook"></i>Facebook
+                            </a>
+                        </div>
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn btn-danger">
+                                <i class="bi bi-google"></i>Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <span class="text-in-line">
+                        Or
+                    </span>
+                </div>
+                <form action="" class="">
+                    <div class="mb-3">
+                        <label for="Email-Phone" class="form-label">Email / Phone Number:</label>
+                        <input type="text" class="form-control" id="Email-Phone" placeholder="Email / Phone Number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                    </div>
+                    <div class="mb-3 forget">
+                        <a href="">Forget password?</a>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="form-control" id="submit" value="Sign In">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Sign Up -->
+    <div class="modal fade" id="Form-Sign-Up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row text-form">
+                        <p>Sign Up by:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn btn-primary">
+                                <i class="bi bi-facebook"></i>Facebook
+                            </a>
+                        </div>
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn btn-danger">
+                                <i class="bi bi-google"></i>Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <span class="text-in-line">
+                        Or
+                    </span>
+                </div>
+                <form action="" class="">
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email:</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password-comfi" class="form-label">Password-confirm:</label>
+                        <input type="password" class="form-control" id="Password-confirm" placeholder="Password-confirm">
+                    </div>
+                    <div class="mb-3 ">
+                        <input type="checkbox" id="Confirm-policy-service">
+                        <label for="Comfirm-policy-service">By joining iVIVU, I agree to all <a href="">terms & conditions</a>.</label>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="form-control" id="submit" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        flatpickr("#Date-start", {
+            minDate: "today",
+            altFormat: "F j, Y",
+            dateFormat: "Y-m-d",
+        });
+    </script>
+    <script>
+        flatpickr("#Date-end", {
+            minDate: "today",
+            // maxDate: new Date().fp_incr(14),  Số ngày tối đa được chọn
+            altFormat: "F j, Y",
+            dateFormat: "Y-m-d",
+            disable: ["2025-01-30", "2025-02-21", "2025-03-08", new Date(2025, 4, 9)],
+            dateFormat: "Y-m-d",
+
+        });
+    </script>
+
+</body>
+
+</html>

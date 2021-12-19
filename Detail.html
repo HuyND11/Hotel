@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăt phòng khách sạn trực tuyến</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style_detail.css">
+    <!-- Link Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+
+
+    <!-- Link flatpickr -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- ??? -->
+
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <header>
+        <nav class="header-nav">
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Khách sạn</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Tours</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Vé máy bay</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Ăn uống</a>
+                <div class="a-line"></div>
+                <div class="menu-inter">
+                </div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">...</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">
+                    <button class="btn">Account</button>
+                </a>
+                <div class="a-line"></div>
+                <div class="form-inter">
+                    <div>
+                        <button class="btn btn-signin" data-bs-toggle="modal" data-bs-target="#Form-Sign-In">Sign In</button>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Haven't got account ? <a href="#" data-bs-toggle="modal" data-bs-target="#Form-Sign-Up">Sign up</a> now</p>
+                    </div>
+                </div>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="http://127.0.0.1:5500/Wed_Demo/index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">VietNames</a></li>
+                    <li class="breadcrumb-item"><a href="#">Quy Nhon</a></li>
+                    <li class="breadcrumb-item"> Khu nghỉ dưỡng Anantara Quy Nhơn Villas</li>
+                </ol>
+            </nav>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7753.251576451822!2d109.232808!3d13.680504!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x973445a204dc362c!2sAnantara%20Quy%20Nhon%20Villas!5e0!3m2!1sen!2sus!4v1638192102783!5m2!1sen!2sus" width="100%"
+                            height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="experience">
+                        <h5 class="experience-title">Trải nghiệm phải thử ở Khu nghỉ dưỡng Anantara Quy Nhơn Villas</h5>
+                        <p>Men theo những con đường nhỏ nhỏ xinh xinh, bạn sẽ tìm thấy Anantara Spa nằm gọn giữa những hàng cây xanh rì, với tầm nhìn ra đại dương bao la thoang thoảng là mùi hương thơm tự nhiên từ những loại cây thân thuộc như chanh, sả.
+                            Với các phòng trị liệu dành cho 1 hoặc 2 người, bạn có thể chọn ngâm sữa dừa hoặc các loại dược liệu khác trước khi tận hưởng các gói massage được thiết kế riêng cho Anantara.</p>
+                    </div>
+                    <div class="hotel-suggestion">
+                        <a href="" class="hotel-suggestion-link">
+                            <div class="row hotel-suggestion-item">
+                                <div class="col-md-3 hotel-suggestion-image">
+                                    <img src="./Asset/Image/suggestion_image_1.jpg" alt="">
+                                </div>
+                                <div class="col-md-9 hotel-suggestion-information">
+                                    <p>Khách sạn LFC Luxury Quy Nhơn</p>
+                                    <span class="star"><i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i></span>
+                                    <p class="review">
+                                        <span class="review-score">9.6</span>
+                                        <span class="reivew-text">Tuyệt vời</span>
+                                        <span class="review-count">| 72 đánh giá</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="hotel-suggestion-link">
+                            <div class="row hotel-suggestion-item">
+                                <div class="col-md-3 hotel-suggestion-image">
+                                    <img src="./Asset/Image/suggestion_image_1.jpg" alt="">
+                                </div>
+                                <div class="col-md-9 hotel-suggestion-information">
+                                    <p>Khách sạn LFC Luxury Quy Nhơn</p>
+                                    <span class="star"><i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i></span>
+                                    <p class="review">
+                                        <span class="review-score">9.6</span>
+                                        <span class="reivew-text">Tuyệt vời</span>
+                                        <span class="review-count">| 72 đánh giá</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="hotel-suggestion-link">
+                            <div class="row hotel-suggestion-item">
+                                <div class="col-md-3 hotel-suggestion-image">
+                                    <img src="./Asset/Image/suggestion_image_1.jpg" alt="">
+                                </div>
+                                <div class="col-md-9 hotel-suggestion-information">
+                                    <p>Khách sạn LFC Luxury Quy Nhơn</p>
+                                    <span class="star"><i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i></span>
+                                    <p class="review">
+                                        <span class="review-score">9.6</span>
+                                        <span class="reivew-text">Tuyệt vời</span>
+                                        <span class="review-count">| 72 đánh giá</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js " integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js " integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="./JS/slider.js "></script>
+
+
+    <!--  -->
+
+    <!-- Modal Sign In -->
+    <div class="modal fade" id="Form-Sign-In" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row text-form">
+                        <p>Sign In by:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn btn-primary">
+                                <i class="bi bi-facebook"></i>Facebook
+                            </a>
+                        </div>
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn btn-danger">
+                                <i class="bi bi-google"></i>Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <span class="text-in-line">
+                        Or
+                    </span>
+                </div>
+                <form action="" class="">
+                    <div class="mb-3">
+                        <label for="Email-Phone" class="form-label">Email / Phone Number:</label>
+                        <input type="text" class="form-control" id="Email-Phone" placeholder="Email / Phone Number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                    </div>
+                    <div class="mb-3 forget">
+                        <a href="">Forget password?</a>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="form-control" id="submit" value="Sign In">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Sign Up -->
+    <div class="modal fade" id="Form-Sign-Up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row text-form">
+                        <p>Sign Up by:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn ">
+                                <i class="bi bi-facebook"></i>Facebook
+                            </a>
+                        </div>
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn btn-danger">
+                                <i class="bi bi-google"></i>Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <span class="text-in-line">
+                        Or
+                    </span>
+                </div>
+                <form action="" class="">
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email:</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password-comfi" class="form-label">Password-confirm:</label>
+                        <input type="password" class="form-control" id="Password-confirm" placeholder="Password-confirm">
+                    </div>
+                    <div class="mb-3 ">
+                        <input type="checkbox" id="Confirm-policy-service">
+                        <label for="Comfirm-policy-service">By joining iVIVU, I agree to all <a href="">terms & conditions</a>.</label>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="form-control" id="submit" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

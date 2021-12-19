@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăt phòng khách sạn trực tuyến</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style_homepage_QuyNhon.css">
+    <!-- Link Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+
+
+    <!-- Link flatpickr -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- ??? -->
+
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <header>
+        <nav class="header-nav">
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Khách sạn</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Tours</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Vé máy bay</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Ăn uống</a>
+                <div class="a-line"></div>
+                <div class="menu-inter">
+                </div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">...</a>
+                <div class="a-line"></div>
+                <div class="menu-inter"></div>
+            </li>
+            <li class="header-nav-item">
+                <a href="#" class="header-nav-link">
+                    <button class="btn">Account</button>
+                </a>
+                <div class="a-line"></div>
+                <div class="form-inter">
+                    <div>
+                        <button class="btn btn-signin" data-bs-toggle="modal" data-bs-target="#Form-Sign-In">Sign In</button>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Haven't got account ? <a href="#" data-bs-toggle="modal" data-bs-target="#Form-Sign-Up">Sign up</a> now</p>
+                    </div>
+                </div>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div>
+
+            </div>
+
+            <div class="content-hotel">
+                <div class="content-hotel-heading">
+                    <p>
+                        <span>
+                            <h3>Khách sạn Quy Nhơn</h3>
+                        </span>
+                        <span>
+                            <a href="https://www.ivivu.com/khach-san-quy-nhon/ban-do"><i class="bi bi-geo-alt-fill"></i>Xem bản đồ</a>
+                        </span>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 slides-left-menu">
+                        <div class="contact">
+                            <div class=" ">
+                                <div><img src="./Asset/Image/contact-img.png" alt=""></div>
+                            </div>
+                            <div class="contact-number">
+                                <h4>Cần hỗ trợ?</h4>
+                                <div>
+                                    <p>HCM
+                                        <span>1900 1870</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>HN
+                                        <span>1900 2045</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>CT
+                                        <span>1900 2087</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-list">
+                            <div class="search-bar">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Input Name Hotel" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <span class="input-group-text" id="basic-addon2"><button style="border: none;"><i class="bi bi-search"></i></button></span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="rating-vote">
+                                <div class="filter-list-heading">
+                                    <h6>Star rating</h6>
+                                </div>
+                                <div class="rating-vote">
+                                    <div class="choose-option">
+                                        <input type="checkbox" name="Vote-1-star" id="1-star">
+                                        <label for="1-star"><i class="bi bi-star-fill icon"></i></label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="Vote-2-star" id="2-star">
+                                        <label for="2-star"><i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i></label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="Vote-3-star" id="3-star">
+                                        <label for="3-star"><i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i></label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="Vote-4-star" id="4-star">
+                                        <label for="4-star"><i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> </label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="Vote-5-star" id="5-star">
+                                        <label for="5-star"><i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="area">
+                                <div class="filter-list-heading">
+                                    <h6>Area</h6>
+                                </div>
+                                <div class="area-option">
+                                    <div class="choose">
+                                        <input type="checkbox" name="area-1" id="area-1">
+                                        <label for="area-1">Bình Định</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="area-1" id="area-2">
+                                        <label for="area-2">Gần Chùa Long Khánh</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="area-3" id="area-3">
+                                        <label for="area-3">Gần Danh thắng Hầm Hô</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="forms-of-accommodation">
+                                <div class="filter-list-heading">
+                                    <h6>Accommodation</h6>
+                                </div>
+                                <div class="forms-of-accommodation-option">
+                                    <div class="choose">
+                                        <input type="checkbox" name="form-1" id="form-1">
+                                        <label for="form-1">Khu nghỉ dưỡng (Resort)</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="form-2" id="form-2">
+                                        <label for="form-2">Biệt thự (Villa)</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="form-3" id="form-3">
+                                        <label for="form-3">Castle/Palace</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="form-4" id="form-4">
+                                        <label for="form-4">Khách sạn (Hotel)</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="form-5" id="form-5">
+                                        <label for="form-5">Căn hộ (Apartment)</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="form-6" id="form-6">
+                                        <label for="form-6">Du thuyền (Cruise)</label>
+                                    </div>
+                                    <!-- collapse -->
+                                    <div class="collapse" id="accommodation-collapse">
+                                        <div class="choose">
+                                            <input type="checkbox" name="form-7" id="form-7">
+                                            <label for="form-7">Nhà nghỉ (Guest house, Homestay...)</label>
+                                        </div>
+                                        <div class="choose">
+                                            <input type="checkbox" name="form-8" id="form-8">
+                                            <label for="form-8">Dorm</label>
+                                        </div>
+                                        <div class="choose">
+                                            <input type="checkbox" name="form-9" id="form-9">
+                                            <label for="form-9">All-inclusive property</label>
+                                        </div>
+                                        <div class="choose">
+                                            <input type="checkbox" name="form-10" id="form-10">
+                                            <label for="form-10">Cottages/Cabins/Houses</label>
+                                        </div>
+                                        <div class="choose">
+                                            <input type="checkbox" name="form-11" id="form-11">
+                                            <label for="form-11">Ranch</label>
+                                        </div>
+                                        <div class="choose">
+                                            <input type="checkbox" name="form-12" id="form-12">
+                                            <label for="form-12">Kiến trúc bản địa</label>
+                                        </div>
+                                    </div>
+                                    <nav class="navbar">
+                                        <span data-bs-toggle="collapse" data-bs-target="#accommodation-collapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><button style="border: none; "><i class="bi bi-caret-down-fill"></i>See more</button></span>
+                                    </nav>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="service">
+                                <div class="filter-list-heading">
+                                    <h6>Service</h6>
+                                </div>
+                                <div class="service-option">
+                                    <div class="choose">
+                                        <input type="checkbox" name="service-1" id="service-1">
+                                        <label for="service-1">Phòng gia đình</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="service-2" id="service-2">
+                                        <label for="service-2">Bãi biển riêng</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="service-3" id="service-3">
+                                        <label for="service-3">Bãi đậu xe ô tô tại khách sạn</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="service-4" id="service-4">
+                                        <label for="service-4">Hồ bơi</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="service-5" id="service-5">
+                                        <label for="service-5">Đưa đón sân bay</label>
+                                    </div>
+                                    <div class="choose">
+                                        <input type="checkbox" name="service-6" id="service-6">
+                                        <label for="service-6">Khu vui chơi trẻ em</label>
+                                    </div>
+                                    <!-- collapse -->
+                                    <div class="collapse" id="service-collapse">
+                                        <div class="choose">
+                                            <input type="checkbox" name="service-7" id="service-7">
+                                            <label for="service-7">Dịch vụ trọn gói</label>
+                                        </div>
+                                    </div>
+                                    <nav class="navbar">
+                                        <span data-bs-toggle="collapse" data-bs-target="#service-collapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><button style="border: none; "><i class="bi bi-caret-down-fill"></i>See more</button></span>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-travel-QuyNhon">
+                            <div class="experience-travel-QuyNhon-heading">
+                                <h6>Kinh nghiệm du lịch Quy Nhơn</h6>
+                            </div>
+                            <div class="experience-travel-QuyNhon-content">
+                                <p class="content">Quy Nhơn là thành phố trung tâm của tỉnh Bình Định, với đường bờ biển dài hình bán nguyệt bao quanh tuyệt đẹp, nước trong xanh và rất hoang sơ. Nhiều du khách khi tới tham quan các bãi biển nơi đây đã phải trầm trồ, bởi
+                                    hiếm có nơi đâu biển lại hùng vĩ và ấn tượng đến thế. <br>Kỳ Co, Eo Gió, Hòn Khô, Cù Lao Xanh… là những nơi bạn phải ghé khi đến Quy Nhơn. Bên cạnh đó đừng quên thưởng thức các món đặc sản như bánh xèo tôm nhảy, bánh
+                                    hỏi lòng heo, bún cá, bánh mì lagu,.. nóng hổi.<br>Du lịch Quy Nhơn, ngắm đã mắt những cảnh đẹp hoang sơ, ăn cho thỏa những món ngon đặc sản, hít thật căng lồng ngực bầu không khí trong lành, thả lòng mình nhẹ nhàng
+                                    theo nhịp sống đơn giản của người dân nơi đây, chẳng mấy chốc mà như sạc đầy năng lượng cho bản thân.
+                                </p>
+                                <a href="https://www.ivivu.com/blog/2016/07/du-lich-quy-nhon-cam-nang-tu-a-den-z/">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 ">
+                        <div class="hotel-list">
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hotel-list-item">
+                                <a href="#">
+                                    <div class="hotel-list-heading">
+                                        <p>
+                                            <i class="bi bi-clock"></i>Còn 93 ngày | Miền Duyên Hải 3N2Đ + Vé máy bay + Villa riêng + Bữa sáng từ 10.699.00 VND/Khách
+                                        </p>
+                                    </div>
+                                    <div class="hotel-item row">
+                                        <div class="col-md-3 image">
+                                            <img src="./Asset/Image/anantara-quy-nhon-villas-pool-aerial.png" alt="">
+                                        </div>
+                                        <div class="col-md-6 detail-hotel">
+                                            <div class="detail-heading">
+                                                <p class="name-hotel">Khu nghỉ dưỡng Anantara Quy Nhơn Villas</p>
+                                                <p class="review">
+                                                    <span class="star">
+                                                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                                                        </span>
+                                                    <span class="heart">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </span>
+                                                    <span class="review">
+                                                            <span class="review-score">9.6</span>
+                                                    <span class="reivew-text">Tuyệt vời</span>
+                                                    <span class="review-count">| 72 đánh giá</span>
+                                                    </span>
+                                                </p>
+                                                <p>
+                                                    <span class="hotel-address">
+                                                            <i class="bi bi-geo-alt-fill"></i> Cầu Bãi Dại, Ghềnh Ráng - Xem bảng đồ
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="hotel-service">
+                                                <div class="">
+                                                    <p>
+                                                        <span><i class="bi bi-check-lg"></i> Thương hiệu quốc tế</span>
+                                                        <span><i class="bi bi-check-lg"></i> Hiện đại</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span>Villa hồ bơi cao cấp</span>
+                                                        <span>Bãi biển riêng</span>
+                                                        <span>1+</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 discount">
+                                            <h2>Ưu đãi bí mật</h2>
+                                            <div class="discount-item">
+                                                <p>Oceanfront Villa</p>
+                                                <p><i class="bi bi-hypnotize"></i> Break fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-lg btn-outline-primary btn-see-more">See more 80 Hotels</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="summary-hearding">
+                    <div class="summary-title">
+                        <div>
+                            <h2>
+                                Khách sạn Quy Nhơn
+                            </h2>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                            <button class="btn btn-sm btn-primary" type="button"><i class="bi bi-hand-thumbs-up-fill"></i> Love 8</button>
+                            <button class="btn btn-sm btn-primary" type="button"><i class="bi bi-share-fill"></i> Shaer</button>
+                        </div>
+                    </div>
+                    <div class="centre"></div>
+                    <div class="summary-rating">
+                        <div class="vote">
+                            <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i> <i class="bi bi-star-fill icon"></i>
+                        </div>
+                        <span>
+                            <b>2.9/5 trên 354 đánh giá</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="summary-content">
+                    <p>Quy Nhơn từng được mệnh danh là "thiên đường biển đảo bị lãng quên" của Việt Nam trước kia vì được thiên nhiên ưu ái cho bờ biển dài, đẹp nhưng lại ít được du khách biết tới. Thế nhưng những năm gần đây Quy Nhơn đang từng bước trở
+                        thành điểm đến yêu thích của nhiều du khách nhờ vẻ hoang sơ và mới lạ. Chỉ cần đến Quy Nhơn vài ngày, ngắm đã mắt những cảnh đẹp, thưởng thức cho thỏa những món ngon đặc sản, hít thật căng lồng ngực bầu không khí trong lành...
+                        bạn sẽ tràn đầy năng lượng sau một kì nghỉ.</p>
+                    <p>Nếu thích nghỉ dưỡng thì các khách sạn Quy Nhơn ở khu vực Nhơn Lý, Eo Gió là lý tưởng nhất, còn muốn ngắm phố phường sôi động thì bạn có thể chọn các khách sạn ở khu vực trung tâm thành phố. Danh sách khách sạn Quy Nhơn đã khá đầy
+                        đủ trên iVIVU.com với nhiều mức giá cho bạn lựa chọn.</p>
+                    <p>Tuy nhiên, vì là thành phố du lịch nên các <span style="font-weight: bold;">khách sạn Quy Nhơn</span> thường kín khách vào cuối tuần hoặc dịp lễ, tết. Để tiết kiệm chi phí hơn, các bạn hãy tham khảo combo trọn gói bao gồm phòng khách
+                        sạn và cả vé máy bay khứ hồi để có chuyến du lịch với chi phí hợp lý nhất.</p>
+                </div>
+            </div>
+            <div class="title-ranking-hotel">
+                <p data-bs-toggle="collapse" data-bs-target="#list-hotel-ranking" aria-expanded="false">
+                    <i class="bi bi-chevron-down"></i> Quy Nhon Hotel by star class
+                </p>
+            </div>
+            <div class="collapse" id="list-hotel-ranking">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="list-hotel-star">
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn 1 sao tại Quy Nhơn</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn 4 sao tại Quy Nhơn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-hotel-star">
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn 2 sao tại Quy Nhơn</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn 5 sao tại Quy Nhơn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-hotel-star">
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn 3 sao tại Quy Nhơn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title-ranking-hotel">
+                <p data-bs-toggle="collapse" data-bs-target="#list-hotel-other" aria-expanded="false">
+                    <i class="bi bi-chevron-down"></i> Quy Nhon Hotel by star class
+                </p>
+            </div>
+            <div class="collapse " id="list-hotel-other">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="list-hotel-star">
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-hotel-star">
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-hotel-star">
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Quảng Ninh</a></li>
+                            <li class="list-hotel-star-item"><a href="#" class="list-hotel-star-link">Khách sạn Sơn La</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="http://127.0.0.1:5500/Wed_Demo/index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">VietNames</a></li>
+                    <li class="breadcrumb-item">Quy Nhon</li>
+                </ol>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h6>Về iVIVU.com</h6>
+                    <ul class="list">
+                        <li><a href="">Chúng tôi</a></li>
+                        <li><a href="">iVIVU Blog</a></li>
+                        <li><a href="">PMS - Miễn phí</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Thông Tin Cần Biết</h6>
+                    <ul class="list">
+                        <li><a href="">Điều kiện & Điều khoản</a></li>
+                        <li><a href="">Quy chế hoạt động</a></li>
+                        <li><a href="">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Đối tác</h6>
+                    <ul class="list">
+                        <li><a href="">Quy chế bảo hiểm Cathay</a></li>
+                        <li><a href="">Yêu cầu bồi thường Cathay</a></li>
+                        <li><a href="">Quy chế trả góp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Được chứng nhận</h6>
+                    <a href="#"><img src="./Asset/Image/logoCCDV.png" alt="" width="80%"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img class="logo-footer" src="./Asset/Image/tmg_logo.png" alt=""></a>
+                    <a href="#"><img class="logo-footer" src="./Asset/Image/vic_logo.png" alt=""></a>
+                    <p>Một thành viên của <b>Thiên Minh Group</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div>
+                        <span style="cursor:pointer;" class="row">
+                            <span style="padding-right: 5px;">
+                                <img src="./Asset/Image/wta-winner-shield-2021.png" width="43" >
+                            </span>
+                        <a href="#" style="color:#333333; ">
+                                iVIVU.com © 2021 - Đại lý Du lịch Trực tuyến Hàng đầu Việt Nam
+                                2021
+                            </a>
+                        </span>
+                        <span style="cursor:pointer;" class="row">
+                            <span style="padding-right: 5px;">
+                                <img src="./Asset/Image/hraa-logo.png" width="43" >
+                            </span>
+                        <a href="#" style="color:#333333; ">
+                            Best Company to Work for in Asian 2021
+                            </a>
+                        </span>
+                    </div>
+                    <div class="address">
+                        <p>DKKD: 0312788481, Ngày cấp: 21/05/2014, Sở kế hoạch đầu tư thành phố Hồ Chí Minh</p>
+                        <p><i class="bi bi-geo-alt-fill"></i><b>HCM:</b> Lầu 2, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, Tp. Hồ Chí Minh <a href="https://www.google.com/maps/dir/215+Nam+K%E1%BB%B3+Kh%E1%BB%9Fi+Ngh%C4%A9a/215+Nam+K%E1%BB%B3+Kh%E1%BB%9Fi+Ngh%C4%A9a,+ph%C6%B0%E1%BB%9Dng+7,+Qu%E1%BA%ADn+3,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.7879873,106.6832823,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x31752f2d1ca383bf:0x6a80cef8498de40!2m2!1d106.685471!2d10.787982!1m5!1m1!1s0x31752f2d1ca383bf:0x6a80cef8498de40!2m2!1d106.685471!2d10.787982">(Xem bản đồ)</a></p>
+                        <p><i class="bi bi-geo-alt-fill"></i><b>HN:</b> Tầng 1, Tòa nhà Ladeco, 266 Đội Cấn, Phường Liễu Giai, Quận Ba Đình, Hà Nội <a href="https://www.google.com/maps/place/To%C3%A0+nh%C3%A0+LADECO/21.0362471,105.8159045,15z/data=!4m5!3m4!1s0x0:0xde7c4fb8e272fabc!8m2!3d21.0363111!4d105.8159219">(Xem bản đồ)</a></p>
+                        <p><i class="bi bi-geo-alt-fill"></i><b>Cần Thơ:</b> Tầng 7 - Tòa nhà STS - 11B Đại Lộ Hòa Bình, P. Tân An, Q. Ninh Kiều, TP. Cần Thơ <a href="https://www.google.com/maps/place/T%C3%B2a+Nh%C3%A0+Sts+Tower/10.0327448,105.7813923,17z/data=!3m1!4b1!4m5!3m4!1s0x31a062a021d30f53:0x4e9df205bfecd40c!8m2!3d10.0327448!4d105.783581">(Xem bản đồ)</a></p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h5>Bạn cần trợ giúp? Hãy gọi ngay</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js " integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js " integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="./JS/slider.js "></script>
+
+    <!--  -->
+
+    <!-- Modal Sign In -->
+    <div class="modal fade" id="Form-Sign-In" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row text-form">
+                        <p>Sign In by:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn btn-primary">
+                                <i class="bi bi-facebook"></i>Facebook
+                            </a>
+                        </div>
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn btn-danger">
+                                <i class="bi bi-google"></i>Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <span class="text-in-line">
+                        Or
+                    </span>
+                </div>
+                <form action="" class="">
+                    <div class="mb-3">
+                        <label for="Email-Phone" class="form-label">Email / Phone Number:</label>
+                        <input type="text" class="form-control" id="Email-Phone" placeholder="Email / Phone Number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                    </div>
+                    <div class="mb-3 forget">
+                        <a href="">Forget password?</a>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="form-control" id="submit" value="Sign In">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Sign Up -->
+    <div class="modal fade" id="Form-Sign-Up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row text-form">
+                        <p>Sign Up by:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn ">
+                                <i class="bi bi-facebook"></i>Facebook
+                            </a>
+                        </div>
+                        <div class="col-md-6 btn-group social">
+                            <a href="" class=" btn btn-danger">
+                                <i class="bi bi-google"></i>Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <span class="text-in-line">
+                        Or
+                    </span>
+                </div>
+                <form action="" class="">
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email:</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password-comfi" class="form-label">Password-confirm:</label>
+                        <input type="password" class="form-control" id="Password-confirm" placeholder="Password-confirm">
+                    </div>
+                    <div class="mb-3 ">
+                        <input type="checkbox" id="Confirm-policy-service">
+                        <label for="Comfirm-policy-service">By joining iVIVU, I agree to all <a href="">terms & conditions</a>.</label>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="form-control" id="submit" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
